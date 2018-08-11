@@ -30,8 +30,7 @@ def getCurrentPlayerNamesAndURLS(suppressOutput=True):
         # we know that all the currently active players have <strong> tags, so we'll limit our names to those
         current_names = letter_page.findAll('strong')
         for n in current_names:
-            name_data = n.children.iterator.__next__()
-            try:
+            name_data = = next(n.children)            try:
                 names.append((name_data.contents[0], 'http://www.basketball-reference.com' + name_data.attrs['href']))
             except Exception as e:
                 pass
