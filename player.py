@@ -1,6 +1,3 @@
-## added some comments from ab
-## more important stuff
-## this is really just a test
 
 from soup_utils import getSoupFromURL
 import re
