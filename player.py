@@ -37,7 +37,7 @@ class Player(object):
             self.scrape_data()
 
     def scrape_data(self):
-        print self.name,self.overview_url
+        print (self.name,self.overview_url)
         if self.overview_url_content is not None:
             raise Exception("Can't populate this!")
 
